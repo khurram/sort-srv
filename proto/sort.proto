@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Sort {
+	rpc InsertionSort(InputArray) returns (OutputArray) {}
+	rpc SelectionSort(InputArray) returns (OutputArray) {}
+}
+
+message InputArray {
+	repeated int32 input = 1;
+}
+
+message OutputArray {
+	repeated int32 output = 2;
+}
